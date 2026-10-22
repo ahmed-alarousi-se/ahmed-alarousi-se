@@ -1,63 +1,194 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" role="img" aria-labelledby="t d">
   <title id="t">Ahmed Al-Arousi, Software and AI Systems Engineer</title>
   <desc id="d">Software Engineering student building backend, full-stack and AI systems.</desc>
+
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1020"/>
       <stop offset="1" stop-color="#111A2E"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.6">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/>
+    <radialGradient id="glowBg" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F8FAFC"/>
-      <stop offset="1" stop-color="#A5F3FC"/>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" x1="48" x2="580">
+      <stop offset="0"   stop-color="#F8FAFC"/>
+      <stop offset="0.5" stop-color="#A5F3FC"/>
+      <stop offset="1"   stop-color="#F8FAFC"/>
     </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.055"/>
+      <stop offset="1"   stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.1"/>
+    </linearGradient>
+    <clipPath id="card">
+      <rect width="1000" height="340" rx="16"/>
+    </clipPath>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#1E293B" stroke-width="1"/>
+      <path d="M32 0H0V32" fill="none" stroke="#1E293B" stroke-width="0.8"/>
     </pattern>
   </defs>
 
+  <!-- Base layers -->
   <rect width="1000" height="340" rx="16" fill="url(#bg)"/>
-  <rect width="1000" height="340" rx="16" fill="url(#grid)" opacity="0.5"/>
-  <rect width="1000" height="340" rx="16" fill="url(#glow)"/>
-  <rect x="0.5" y="0.5" width="999" height="339" rx="16" fill="none" stroke="#1E293B"/>
+  <rect width="1000" height="340" rx="16" fill="url(#grid)" opacity="0.4"/>
+  <rect width="1000" height="340" rx="16" fill="url(#glowBg)"/>
 
-  <text x="48" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3" fill="#22D3EE">SOFTWARE ENGINEERING STUDENT</text>
-  <text x="48" y="142" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="50" font-weight="700" fill="url(#name)">Ahmed Al-Arousi</text>
-  <text x="48" y="182" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#CBD5E1">Software &amp; AI Systems Engineer</text>
-  <text x="48" y="218" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#94A3B8">Building backend, full-stack, and AI systems that hold up in production.</text>
+  <!-- Scan line sweep -->
+  <rect width="1000" height="70" clip-path="url(#card)" fill="url(#scanGrad)">
+    <animateTransform attributeName="transform" type="translate" from="0,-70" to="0,340" dur="5s" begin="0s" repeatCount="indefinite"/>
+  </rect>
 
-  <g stroke="#22D3EE" stroke-opacity="0.35" stroke-width="1.5">
-    <line x1="800" y1="150" x2="705" y2="70"/>
-    <line x1="800" y1="150" x2="900" y2="70"/>
-    <line x1="800" y1="150" x2="705" y2="254"/>
-    <line x1="800" y1="150" x2="900" y2="254"/>
+  <!-- Card border – static -->
+  <rect x="0.5" y="0.5" width="999" height="339" rx="16" fill="none" stroke="#1E293B" stroke-width="1"/>
+  <!-- Card border – pulsing cyan glow -->
+  <rect x="0.5" y="0.5" width="999" height="339" rx="16" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-opacity="0">
+    <animate attributeName="stroke-opacity" values="0;0.25;0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="60" width="3" height="0" rx="2" fill="url(#accentBar)">
+    <animate attributeName="height" from="0" to="200" dur="1s" begin="0.3s" fill="freeze"/>
+    <animate attributeName="y" from="60" to="60" dur="1s" begin="0.3s" fill="freeze"/>
+  </rect>
+
+  <!-- Top-right status dot -->
+  <circle cx="964" cy="28" r="5" fill="#22D3EE" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.8s" fill="freeze"/>
+    <animate attributeName="r" values="5;6.5;5" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="964" cy="28" r="10" fill="none" stroke="#22D3EE" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.8s" fill="freeze"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="8;14;8" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Label -->
+  <text x="48" y="72"
+    font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    font-size="11" letter-spacing="3.5" fill="#22D3EE" opacity="0">
+    SOFTWARE ENGINEERING STUDENT
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- Name -->
+  <text x="48" y="144"
+    font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+    font-size="50" font-weight="700" fill="url(#nameGrad)" opacity="0">
+    Ahmed Al-Arousi
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.85s" fill="freeze"/>
+  </text>
+
+  <!-- Blinking cursor after name -->
+  <rect x="554" y="106" width="3" height="42" rx="1" fill="#22D3EE" opacity="0">
+    <animate attributeName="opacity" values="0;0;1" dur="1.5s" begin="0s" fill="freeze" keyTimes="0;0.55;1"/>
+    <animate attributeName="opacity" values="1;0;1;0" dur="1s" begin="2.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Subtitle -->
+  <text x="48" y="186"
+    font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+    font-size="21" fill="#CBD5E1" opacity="0">
+    Software &amp; AI Systems Engineer
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="1.3s" fill="freeze"/>
+  </text>
+
+  <!-- Description -->
+  <text x="48" y="221"
+    font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+    font-size="14.5" fill="#64748B" opacity="0">
+    Building backend, full-stack, and AI systems that hold up in production.
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="1.65s" fill="freeze"/>
+  </text>
+
+  <!-- ── Diagram (right panel) ── -->
+
+  <!-- Lines draw in -->
+  <g stroke="#22D3EE" stroke-opacity="0.3" stroke-width="1.5" fill="none">
+    <line x1="800" y1="152" x2="705" y2="72" stroke-dasharray="140" stroke-dashoffset="140">
+      <animate attributeName="stroke-dashoffset" from="140" to="0" dur="0.7s" begin="1.5s" fill="freeze"/>
+    </line>
+    <line x1="800" y1="152" x2="900" y2="72" stroke-dasharray="140" stroke-dashoffset="140">
+      <animate attributeName="stroke-dashoffset" from="140" to="0" dur="0.7s" begin="1.65s" fill="freeze"/>
+    </line>
+    <line x1="800" y1="152" x2="705" y2="256" stroke-dasharray="140" stroke-dashoffset="140">
+      <animate attributeName="stroke-dashoffset" from="140" to="0" dur="0.7s" begin="1.8s" fill="freeze"/>
+    </line>
+    <line x1="800" y1="152" x2="900" y2="256" stroke-dasharray="140" stroke-dashoffset="140">
+      <animate attributeName="stroke-dashoffset" from="140" to="0" dur="0.7s" begin="1.95s" fill="freeze"/>
+    </line>
   </g>
 
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E2E8F0" text-anchor="middle">
-    <rect x="640" y="52" width="130" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
-    <text x="705" y="75">FastAPI</text>
-    <rect x="840" y="52" width="120" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
-    <text x="900" y="75">Next.js</text>
-    <rect x="640" y="236" width="130" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
-    <text x="705" y="259">AI / RAG</text>
-    <rect x="840" y="236" width="120" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
-    <text x="900" y="259">PostgreSQL</text>
-    <rect x="740" y="128" width="120" height="44" rx="10" fill="#0F2A3A" stroke="#22D3EE"/>
-    <text x="800" y="155" fill="#A5F3FC">Core API</text>
+  <!-- Satellite nodes -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E2E8F0" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.7s" fill="freeze"/>
+    <rect x="640" y="54" width="130" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="705" y="77">FastAPI</text>
+    <rect x="840" y="54" width="120" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="900" y="77">Next.js</text>
+    <rect x="640" y="238" width="130" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="705" y="261">AI / RAG</text>
+    <rect x="840" y="238" width="120" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="900" y="261">PostgreSQL</text>
   </g>
 
+  <!-- Central node (glowing) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.1s" fill="freeze"/>
+    <rect x="740" y="130" width="120" height="44" rx="10" fill="#0F2A3A">
+      <animate attributeName="fill" values="#0F2A3A;#0D2233;#0F2A3A" dur="2s" begin="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="740" y="130" width="120" height="44" rx="10" fill="none" stroke="#22D3EE">
+      <animate attributeName="stroke-opacity" values="0.9;0.3;0.9" dur="2s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;1;1.5" dur="2s" begin="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="800" y="157" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#A5F3FC" text-anchor="middle">Core API</text>
+  </g>
+
+  <!-- Tech pill strip (sequential reveal) -->
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E2E8F0" text-anchor="middle">
-    <rect x="48"  y="296" width="72"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="84"  y="315">Python</text>
-    <rect x="130" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="170" y="315">FastAPI</text>
-    <rect x="220" y="296" width="104" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="272" y="315">TypeScript</text>
-    <rect x="334" y="296" width="64"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="366" y="315">React</text>
-    <rect x="408" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="448" y="315">Next.js</text>
-    <rect x="498" y="296" width="104" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="550" y="315">PostgreSQL</text>
-    <rect x="612" y="296" width="72"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="648" y="315">Docker</text>
-    <rect x="694" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="734" y="315">Node.js</text>
-    <rect x="784" y="296" width="88"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="828" y="315">Firebase</text>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.9s" fill="freeze"/>
+      <rect x="48"  y="296" width="72"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="84"  y="315">Python</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.05s" fill="freeze"/>
+      <rect x="130" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="170" y="315">FastAPI</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.2s" fill="freeze"/>
+      <rect x="220" y="296" width="104" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="272" y="315">TypeScript</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.35s" fill="freeze"/>
+      <rect x="334" y="296" width="64"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="366" y="315">React</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.5s" fill="freeze"/>
+      <rect x="408" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="448" y="315">Next.js</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.65s" fill="freeze"/>
+      <rect x="498" y="296" width="104" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="550" y="315">PostgreSQL</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.8s" fill="freeze"/>
+      <rect x="612" y="296" width="72"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="648" y="315">Docker</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.95s" fill="freeze"/>
+      <rect x="694" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="734" y="315">Node.js</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="3.1s" fill="freeze"/>
+      <rect x="784" y="296" width="88"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+      <text x="828" y="315">Firebase</text></g>
+
   </g>
+
 </svg>
