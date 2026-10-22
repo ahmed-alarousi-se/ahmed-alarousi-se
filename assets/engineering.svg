@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 452" role="img" aria-labelledby="t d">
+  <title id="t">Engineering focus</title>
+  <desc id="d">Backend systems, AI and LLM systems, full-stack development, system architecture, workflow automation, database and API design.</desc>
+  <rect width="1000" height="452" rx="16" fill="#0B1020"/>
+  <rect x="0.5" y="0.5" width="999" height="451" rx="16" fill="none" stroke="#1E293B"/>
+
+  <text x="40" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3" fill="#22D3EE">ENGINEERING FOCUS</text>
+  <text x="40" y="82" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="700" fill="#F8FAFC">What I build</text>
+
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <rect x="40" y="104" width="296" height="132" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="64" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22D3EE">01</text>
+    <text x="64" y="176" font-size="19" font-weight="700" fill="#F1F5F9">Backend Systems</text>
+    <text x="64" y="204" font-size="13" fill="#94A3B8">APIs, authentication, RBAC,</text>
+    <text x="64" y="222" font-size="13" fill="#94A3B8">databases, scalable architecture.</text>
+
+    <rect x="352" y="104" width="296" height="132" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="376" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22D3EE">02</text>
+    <text x="376" y="176" font-size="19" font-weight="700" fill="#F1F5F9">AI &amp; LLM Systems</text>
+    <text x="376" y="204" font-size="13" fill="#94A3B8">Agents, RAG, document intelligence,</text>
+    <text x="376" y="222" font-size="13" fill="#94A3B8">LLM-powered workflows.</text>
+
+    <rect x="664" y="104" width="296" height="132" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="688" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22D3EE">03</text>
+    <text x="688" y="176" font-size="19" font-weight="700" fill="#F1F5F9">Full-Stack Development</text>
+    <text x="688" y="204" font-size="13" fill="#94A3B8">End-to-end products with</text>
+    <text x="688" y="222" font-size="13" fill="#94A3B8">TypeScript, React, and Next.js.</text>
+
+    <rect x="40" y="252" width="296" height="132" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="64" y="286" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22D3EE">04</text>
+    <text x="64" y="324" font-size="19" font-weight="700" fill="#F1F5F9">System Architecture</text>
+    <text x="64" y="352" font-size="13" fill="#94A3B8">Clean architecture, SOLID,</text>
+    <text x="64" y="370" font-size="13" fill="#94A3B8">modular and maintainable design.</text>
+
+    <rect x="352" y="252" width="296" height="132" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="376" y="286" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22D3EE">05</text>
+    <text x="376" y="324" font-size="19" font-weight="700" fill="#F1F5F9">Workflow Automation</text>
+    <text x="376" y="352" font-size="13" fill="#94A3B8">Process automation, document</text>
+    <text x="376" y="370" font-size="13" fill="#94A3B8">processing, and integrations.</text>
+
+    <rect x="664" y="252" width="296" height="132" rx="14" fill="#0F172A" stroke="#1E293B"/>
+    <text x="688" y="286" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22D3EE">06</text>
+    <text x="688" y="324" font-size="19" font-weight="700" fill="#F1F5F9">Database &amp; API Design</text>
+    <text x="688" y="352" font-size="13" fill="#94A3B8">Well-structured REST APIs</text>
+    <text x="688" y="370" font-size="13" fill="#94A3B8">and PostgreSQL data models.</text>
+  </g>
+
+  <rect x="40" y="402" width="920" height="36" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <text x="500" y="425" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.5" fill="#CBD5E1">CLEAN ARCHITECTURE · SOLID · SECURITY · MAINTAINABILITY · SCALABILITY · PRODUCTION-MINDED</text>
+</svg>

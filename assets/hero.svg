@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" role="img" aria-labelledby="t d">
+  <title id="t">Ahmed Al-Arousi, Software and AI Systems Engineer</title>
+  <desc id="d">Software Engineering student building backend, full-stack and AI systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#111A2E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="340" rx="16" fill="url(#bg)"/>
+  <rect width="1000" height="340" rx="16" fill="url(#grid)" opacity="0.5"/>
+  <rect width="1000" height="340" rx="16" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="999" height="339" rx="16" fill="none" stroke="#1E293B"/>
+
+  <text x="48" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3" fill="#22D3EE">SOFTWARE ENGINEERING STUDENT</text>
+  <text x="48" y="142" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="50" font-weight="700" fill="url(#name)">Ahmed Al-Arousi</text>
+  <text x="48" y="182" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#CBD5E1">Software &amp; AI Systems Engineer</text>
+  <text x="48" y="218" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#94A3B8">Building backend, full-stack, and AI systems that hold up in production.</text>
+
+  <g stroke="#22D3EE" stroke-opacity="0.35" stroke-width="1.5">
+    <line x1="800" y1="150" x2="705" y2="70"/>
+    <line x1="800" y1="150" x2="900" y2="70"/>
+    <line x1="800" y1="150" x2="705" y2="254"/>
+    <line x1="800" y1="150" x2="900" y2="254"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E2E8F0" text-anchor="middle">
+    <rect x="640" y="52" width="130" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="705" y="75">FastAPI</text>
+    <rect x="840" y="52" width="120" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="900" y="75">Next.js</text>
+    <rect x="640" y="236" width="130" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="705" y="259">AI / RAG</text>
+    <rect x="840" y="236" width="120" height="36" rx="10" fill="#0F172A" stroke="#334155"/>
+    <text x="900" y="259">PostgreSQL</text>
+    <rect x="740" y="128" width="120" height="44" rx="10" fill="#0F2A3A" stroke="#22D3EE"/>
+    <text x="800" y="155" fill="#A5F3FC">Core API</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E2E8F0" text-anchor="middle">
+    <rect x="48"  y="296" width="72"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="84"  y="315">Python</text>
+    <rect x="130" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="170" y="315">FastAPI</text>
+    <rect x="220" y="296" width="104" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="272" y="315">TypeScript</text>
+    <rect x="334" y="296" width="64"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="366" y="315">React</text>
+    <rect x="408" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="448" y="315">Next.js</text>
+    <rect x="498" y="296" width="104" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="550" y="315">PostgreSQL</text>
+    <rect x="612" y="296" width="72"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="648" y="315">Docker</text>
+    <rect x="694" y="296" width="80"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="734" y="315">Node.js</text>
+    <rect x="784" y="296" width="88"  height="28" rx="14" fill="#0F172A" stroke="#1E293B"/><text x="828" y="315">Firebase</text>
+  </g>
+</svg>

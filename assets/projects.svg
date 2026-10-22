@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" role="img" aria-labelledby="t d">
+  <title id="t">Featured engineering work</title>
+  <desc id="d">JockerNET, an internet service provider platform. NexTalk, a real-time communication platform in progress.</desc>
+  <rect width="1000" height="340" rx="16" fill="#0B1020"/>
+  <rect x="0.5" y="0.5" width="999" height="339" rx="16" fill="none" stroke="#1E293B"/>
+
+  <text x="40" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3" fill="#22D3EE">FEATURED ENGINEERING WORK</text>
+
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <!-- JockerNET -->
+    <rect x="40" y="76" width="440" height="236" rx="16" fill="#0F172A" stroke="#1E293B"/>
+    <text x="64" y="118" font-size="24" font-weight="700" fill="#F8FAFC">JockerNET</text>
+    <text x="64" y="144" font-size="14" fill="#94A3B8">Internet service provider platform</text>
+    <line x1="64" y1="162" x2="456" y2="162" stroke="#1E293B"/>
+    <circle cx="68" cy="188" r="3" fill="#22D3EE"/>
+    <text x="84" y="192" font-size="14" fill="#CBD5E1">Customer portals and subscription billing</text>
+    <circle cx="68" cy="212" r="3" fill="#22D3EE"/>
+    <text x="84" y="216" font-size="14" fill="#CBD5E1">Authentication, RBAC, and audit logs</text>
+    <circle cx="68" cy="236" r="3" fill="#22D3EE"/>
+    <text x="84" y="240" font-size="14" fill="#CBD5E1">Arabic RTL and English LTR interfaces</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E2E8F0" text-anchor="middle">
+    <rect x="64"  y="266" width="92"  height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="110" y="283">TypeScript</text>
+    <rect x="166" y="266" width="74"  height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="203" y="283">Python</text>
+    <rect x="250" y="266" width="100" height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="300" y="283">PostgreSQL</text>
+    <rect x="360" y="266" width="76"  height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="398" y="283">Docker</text>
+  </g>
+
+  <!-- NexTalk -->
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <rect x="520" y="76" width="440" height="236" rx="16" fill="#0F172A" stroke="#1E293B"/>
+    <text x="544" y="118" font-size="24" font-weight="700" fill="#F8FAFC">NexTalk</text>
+    <text x="544" y="144" font-size="14" fill="#94A3B8">Real-time communication platform</text>
+    <line x1="544" y1="162" x2="936" y2="162" stroke="#1E293B"/>
+    <circle cx="548" cy="188" r="3" fill="#22D3EE"/>
+    <text x="564" y="192" font-size="14" fill="#CBD5E1">Under active development</text>
+  </g>
+  <rect x="824" y="98" width="120" height="26" rx="13" fill="none" stroke="#22D3EE" stroke-opacity="0.6"/>
+  <text x="884" y="115" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.5" fill="#22D3EE">IN PROGRESS</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E2E8F0" text-anchor="middle">
+    <rect x="544" y="266" width="92" height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="590" y="283">TypeScript</text>
+    <rect x="646" y="266" width="74" height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="683" y="283">Python</text>
+    <rect x="730" y="266" width="76" height="26" rx="13" fill="#0B1020" stroke="#334155"/><text x="768" y="283">Docker</text>
+  </g>
+</svg>
