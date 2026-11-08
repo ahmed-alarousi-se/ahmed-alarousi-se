@@ -15,13 +15,11 @@
 
 ## About
 
-I'm a Software Engineering student and Software & AI Systems Engineer focused on building reliable, scalable, and production-oriented software.
+I'm a software engineering student building production-oriented backend systems, full-stack applications, and AI-powered tools. I focus on turning ambiguous requirements into clean architectures, well-structured APIs, and software that stays maintainable as it grows beyond the prototype stage.
 
-My work spans backend engineering, full-stack development, AI-powered systems, and workflow automation. I enjoy turning complex requirements into clean architectures, well-structured APIs, and practical products that solve real problems.
+My current interests include REST API design, scalable backend architecture, RAG and document intelligence, AI agents, and workflow automation. My day-to-day stack is Python, FastAPI, PostgreSQL, TypeScript, React, Next.js, and Docker.
 
-My core interests include backend systems, REST APIs, scalable application architecture, AI agents, RAG and document intelligence, automation, and cloud-ready software. I primarily work with Python, FastAPI, PostgreSQL, TypeScript, React, Next.js, Docker, and modern AI tooling.
-
-I care about clean architecture, SOLID principles, security, maintainability, and building systems that can grow beyond the prototype stage.
+I care about clean architecture, SOLID principles, security, and writing code that the next engineer can understand.
 
 ---
 
@@ -43,24 +41,26 @@ I care about clean architecture, SOLID principles, security, maintainability, an
 
 ---
 
-## Featured Engineering Work
+## Featured Projects
 
 <img src="assets/projects.svg" alt="Featured projects: JockerNET, an internet service provider platform, and NexTalk, a real-time communication platform in progress" width="100%"/>
 
-- **[JockerNET](https://jokerisp.com/en)** — internet service provider platform with customer portals, subscriptions, billing, authentication and RBAC, audit logs, and Arabic and English interfaces.
-- **NexTalk** — real-time communication platform, currently in progress.
+**[JockerNET](https://jokerisp.com/en)** — Production platform for an internet service provider. Includes customer portals, subscription and billing flows, authentication with role-based access control, audit logging, and full Arabic and English interfaces. [Add a line on your role, scale, or key technical decisions.]
+
+**NexTalk** — Real-time communication platform (in progress). [Add the core features you're building, such as messaging, presence, or WebSocket architecture.]
 
 ---
 
 ## Currently Building
 
-AI-powered backend systems combining document intelligence, RAG pipelines, and agentic workflows on top of production-grade APIs.
+AI-powered backend systems that combine document intelligence and RAG pipelines with agentic workflows, built on production-grade APIs.
 
 ---
 
-## Connect
+## Get in Touch
+
+Open to backend, full-stack, and AI engineering roles and collaborations. The fastest way to reach me is email.
 
 - Portfolio: [al-arousi.com](https://al-arousi.com)
 - LinkedIn: [ahmed-alarousi-0453213aa](https://www.linkedin.com/in/ahmed-alarousi-0453213aa)
-- LeetCode: [ahmed-alarousi-se](https://leetcode.com/u/ahmed-alarousi-se/)
 - Email: [ahmed.alarousi.se@gmail.com](mailto:ahmed.alarousi.se@gmail.com)
